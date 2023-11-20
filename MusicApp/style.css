@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+/* font-family: 'Nunito Sans', sans-serif; */
+body{
+    background-color: blanchedalmond;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.logo img{
+    width: 50px;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 57vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 80%;
+    border-radius: 12px;
+    margin: 23px auto;
+    padding: 30px;
+    background-image: url('views/bg_img.jpg');
+}
+
+.songItemContainer{
+    margin-top: 30px;
+}
+
+.songItem{
+    display: flex;
+    height: 60px;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.songItem img{
+    width: 60px;
+    margin: 0 15px;
+    border-radius: 12px
+}
+
+.timestamp{
+    margin: 0 20px;
+    display: flex;
+}
+
+.timestamp i{
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+    padding: 5px;
+}
+
+#myProgressBar{
+    width: 80vw;
+}
+
+.info{
+    display: flex;
+    position: absolute;
+    left: 10vw;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.info img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}

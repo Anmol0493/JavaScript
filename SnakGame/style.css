@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background: url("./img/bg.jpg");
+    min-height: 100vh;
+    background-size: 98vw 100vh;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#instructions{
+    position: absolute;
+    top: 20px;
+    /* left: 300px; */
+    margin-left: 30%;
+    margin-right: 40%;
+    color: white;
+    font-size: 19px;
+    font-family: 'New Tegomin', serif;
+}
+
+#highscoreBox{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+
+}
+
+#board{
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+    width: 90vmin;
+    max-width: 600px;
+    height: 90vmin;
+    max-height: 520px;
+    margin-top: 20px;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    position: relative;
+    margin-left: 20%;
+    cursor: text;
+}
+
+.snakehead{
+    background-color: rgb(57, 165, 207);;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eye {
+    width: 25%;
+    height: 25%;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye:nth-child(1) {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.eye:nth-child(2) {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.pupil {
+    width: 40%;
+    height: 40%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.snakebody{
+    background-color: rgb(121, 196, 221);
+    border: 1px solid #2C3E50;
+    border-radius: 50%;
+}
+
+.food{
+    background-color: red;
+    border: .25vmin solid black;
+    border-radius: 50%;
+}

@@ -1,0 +1,8 @@
+cookie-session
+helps to stores the session data on the client within a cookie
+without requiring any database/resources on the server side
+
+keys: sign & verify cookie values. Set cookies are always signed with keys[0],
+while the other keys are valid for verification, allowing for key rotation.
+httpOnly: indicate that the cookie is only to be sent over HTTP(S),
+and not made available to client JavaScript.
